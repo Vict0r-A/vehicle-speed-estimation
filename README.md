@@ -67,9 +67,9 @@ The output video includes:
 - Vehicles are consistently detected and tracked across the scene
 - Estimated speeds fall within realistic urban traffic ranges
 - Each vehicle is counted once using its unique tracking ID
-- The full pipeline runs automatically and produces an annotated output video
- 
+- The project runs automatically and produces an annotated output video
 
+<img width="1440" height="830" alt="Screenshot 2025-12-25 at 11 07 37" src="https://github.com/user-attachments/assets/434d05a8-906e-4292-a918-701c76d17412" />
 ---
 
 ## How to Run
@@ -81,8 +81,8 @@ You can run this project either **locally using VS Code and `main.py`** or **in 
 ## Option 1: Run Locally  (i.e VSCode)
 
 ### 1. Clone the repository
- 
-git clone https://github.com/Vict0rA/vehicle-speed-estimation.git
+``` bash
+git clone https://github.com/Vict0r-A/vehicle-speed-estimation.git
 cd vehicle-speed-estimation
 2. Create and activate a virtual environment (optional, but recommended)
 Linux / macOS
@@ -104,13 +104,14 @@ python -m main,py
 The input video will be downloaded automatically, and the annotated output video will be saved to:
 
 output_video/vehicles_output.mp4
+```
 ### Option 2: Run in Google Colab (T4 GPU)
  
-1. Open the notebook in Google Colab
+ # 1. Open the notebook in Google Colab
 Upload Vehicle_Computer_Vision.ipynb to Google Colab
 or open it directly from GitHub using the Open in Colab option
 
-2. Select GPU runtime
+# 2. Select GPU runtime
 In Colab:
 
 Runtime → Change runtime type
@@ -121,14 +122,13 @@ GPU type → T4
 
 Save
 
-3. Run the notebook
+# 3. Run the notebook
 
 Run all cells from top to bottom
 
 
-4. Output
+# 4. Output
 The annotated output video will be generated as:
-
 
 vehicles_output.mp4
 
