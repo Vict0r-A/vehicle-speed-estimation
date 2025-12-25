@@ -81,7 +81,7 @@ You can run this project either **locally using VS Code and `main.py`** or **in 
 ## Option 1: Run Locally  (i.e VSCode)
 
 ### 1. Clone the repository
-```bash
+ 
 git clone https://github.com/Vict0rA/vehicle-speed-estimation.git
 cd vehicle-speed-estimation
 2. Create and activate a virtual environment (optional, but recommended)
@@ -95,7 +95,7 @@ Windows
 python -m venv venv
 venv\Scripts\activate
 3. Install dependencies
-bash
+ 
 pip install -r requirements.txt
 4. Run the code
 From the project root, run:
