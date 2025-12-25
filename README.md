@@ -69,7 +69,9 @@ The output video includes:
 - Each vehicle is counted once using its unique tracking ID
 - The project runs automatically and produces an annotated output video
 
-<img width="1440" height="830" alt="Screenshot 2025-12-25 at 11 07 37" src="https://github.com/user-attachments/assets/434d05a8-906e-4292-a918-701c76d17412" />
+  
+ <img width="1440" height="900" alt="Screenshot 2025-12-25 at 11 28 03" src="https://github.com/user-attachments/assets/2120ba15-dfab-454f-a953-af5dd0b5fa55" />
+
 ---
 
 ## How to Run
