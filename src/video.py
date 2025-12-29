@@ -146,15 +146,43 @@ def run(
         annotated = label_annot.annotate(annotated, detections, labels)
 
         # This displays the total number of unique vehicles detected
+        overlay_height = 50
+        overlay_color = (30, 30, 30)
+        text_color = (255, 255, 255)
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        font_scale = 1
+        thickness = 2
+
+        text = f"Vehicles counted: {len(vehicle_ids)}"
+
+        frame_h, frame_w = annotated.shape[:2]
+
+        (text_w, text_h), baseline = cv2.getTextSize(
+            text, font, font_scale, thickness
+        )
+
+        text_x = (frame_w - text_w) // 2
+        text_y = 35
+
+        cv2.rectangle(
+            annotated,
+            (0, 0),
+            (frame_w, overlay_height),
+            overlay_color,
+            thickness=-1
+        )
+
         cv2.putText(
             annotated,
-            f"Vehicles counted: {len(vehicle_ids)}",
-            (30, 50),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            1,
-            (0, 255, 0),
-            2
+            text,
+            (text_x, text_y),
+            font,
+            font_scale,
+            text_color,
+            thickness,
+            cv2.LINE_AA
         )
+
 
          
         writer.write(annotated)
