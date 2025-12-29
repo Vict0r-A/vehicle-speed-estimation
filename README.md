@@ -68,7 +68,10 @@ The output video includes:
 - Estimated speeds fall within realistic urban traffic ranges
 - Each vehicle is counted once using its unique tracking ID
 - The full pipeline runs automatically and produces an annotated output video
- 
+
+  
+ <img width="1440" height="900" alt="Screenshot 2025-12-29 at 14 32 05" src="https://github.com/user-attachments/assets/d6883248-3b6c-474d-b9fe-30b0230a75c4" />
+
 
 ---
 
